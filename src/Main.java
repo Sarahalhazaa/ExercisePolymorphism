@@ -22,7 +22,7 @@ while (num!=5){
           String Model = scanner.nextLine();
           System.out.println("Enter Rental Days: ");
             int Days = scanner.nextInt();
-                Car C=new Car(Model,Days);
+               Vehicle C=new Car(Model,Days);
            System.out.println("Rental Details: ");
             rentedVehicles.add(C);
             C.displayDetails();
@@ -36,7 +36,7 @@ while (num!=5){
                 String brand = scanner.nextLine();
                 System.out.println("Enter Rental Hours: ");
                 int Hours = scanner.nextInt();
-                Bike B =new Bike(brand,Hours);
+               Vehicle B =new Bike(brand,Hours);
                 System.out.println("Rental Details: ");
                 rentedVehicles.add(B);
                 B.displayDetails();
@@ -50,7 +50,7 @@ while (num!=5){
                 String type = scanner.nextLine();
                 System.out.println("Enter Rental weeks: ");
                 int weeks = scanner.nextInt();
-                Truck T=new Truck(type,weeks);
+                Vehicle T=new Truck(type,weeks);
                 System.out.println("Rental Details: ");
                 rentedVehicles.add(T);
                 T.displayDetails();
